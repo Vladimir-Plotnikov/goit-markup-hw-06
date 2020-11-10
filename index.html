@@ -411,12 +411,60 @@
               </li>
             </ul>
           </div>
+
+          <div class="connect-us">
+            <h3 class="connect-us-title">Подпишитесь на рассылку</h3>
+            <form action="#">
+              <input type="text" class="input-connect-us" name="user-name" placeholder="E-mail">
+              <input type="button"class="input-connect-us-telegram">
+                <svg class="footer-telegram-svg">
+                  <use href="./img/sprite.svg#icon-icon-send-telegram"></use>
+                </svg>
+                
+            </form>
+          </div>
         </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" method="GET" class="contact-form">
+          <div class="position-icon-form">
+            <p class="title-fields">Имя</p>
+            <svg class="modal-form-svg-icon">
+              <use href="./img/sprite.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          <input type="text" class="contact-form_input" name="user-name" placeholder="" required minlength="2">
+        </div>
+        <div class="position-icon-form">
+          <p class="title-fields">Телефон</p>
+        <svg class="modal-form-svg-icon">
+          <use href="./img/sprite.svg#icon-phone-black-18dp-1"></use>
+        </svg>
+        <input type="tel" class="contact-form_input" name="tel" placeholder="" required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+        </div>
+        <div class="position-icon-form">
+          <p class="title-fields">Почта</p>
+          <svg class="modal-form-svg-icon">
+            <use href="./img/sprite.svg#icon-email-black-18dp-1"></use>
+          </svg>
+          <input type="email" class="contact-form_input" name="user-email" placeholder="" required>
+        </div>
+          <div class="contact-form-group">
+            <p class="contact-comments">Комментарии</p>
+            <textarea name="user-message" class="contact-form_messages" minlength="80" placeholder="Введите текс"></textarea>
+          </div>
+          <div class="contact-form-group">
+            <input type="checkbox" name="agreements"> Соглашаюсь с рассылкой и принимаю <a class="link" href="">условия
+              договора </a>
+          </div>
+        <div class="btn-wrapper">
+            <button type="submit" class="button-form-submit">Отправить</button>
+          </div>
+        </form>
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn-svg"> 
             <use href="./img/sprite.svg#icon-close"></use></svg></button>
